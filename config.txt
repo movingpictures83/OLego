@@ -1,0 +1,9 @@
+Prefix pipelines/OLego/
+Plugin DeNovoSplice inputfile DeNovo/parameters.forward.txt outputfile r1.sam
+Plugin DeNovoSplice inputfile DeNovo/parameters.reverse.txt outputfile r2.sam
+Plugin SAMMerge inputfile sams.txt outputfile merge.sam
+Plugin SAM2BED inputfile merge.sam outputfile merge.bed
+Plugin BED2Junc inputfile merge.bed outputfile merge.junc.bed
+Plugin NonDeNovoSplice inputfile NonDeNovo/parameters.forward.txt outputfile r1.remap.sam
+Plugin NonDeNovoSplice inputfile NonDeNovo/parameters.reverse.txt outputfile r2.remap.sam
+Plugin SAMMerge inputfile sams2.txt outputfile merge.remap.sam

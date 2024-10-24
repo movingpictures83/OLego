@@ -1,0 +1,4 @@
+fastq	r2.fq
+model	mm.cfg
+junction	mm10.intron.hmr.bed
+index	mm10.fa

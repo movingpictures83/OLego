@@ -1,0 +1,4 @@
+fastq	r1.fq
+model	mm.cfg
+junction	merge.junc.bed
+index	mm10.fa
